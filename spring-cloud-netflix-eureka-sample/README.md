@@ -2,6 +2,7 @@
 
 Spring Cloud Netflix Eureka 示例项目，项目结构：
 
+```html
 spring-cloud-netflix-eureka-sample（父项目）
 |
 |
@@ -9,6 +10,7 @@ spring-cloud-netflix-eureka-sample（父项目）
 |
 |
 |__ order-service（Eureka 客户端服务提供者应用）
+```
 
 # 环境配置
 
