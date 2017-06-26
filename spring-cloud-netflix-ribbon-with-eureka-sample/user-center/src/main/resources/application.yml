@@ -1,0 +1,10 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: user-center
+eureka:
+  client:
+    register-with-eureka: false
+    serviceUrl:
+      defaultZone: http://peer1:8761/eureka/
