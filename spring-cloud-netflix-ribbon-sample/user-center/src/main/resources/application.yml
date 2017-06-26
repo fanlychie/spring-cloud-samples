@@ -1,0 +1,11 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: user-center
+order-service:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: peer1:8881,peer2:8882
+    ServerListRefreshInterval: 15000
