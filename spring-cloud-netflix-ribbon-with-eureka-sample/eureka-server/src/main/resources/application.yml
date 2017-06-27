@@ -3,6 +3,10 @@ spring:
     name: eureka-server
   profiles:
     active: peer1
+logging:
+  level:
+    com.netflix.eureka: 'off'
+    com.netflix.discovery: 'off'
 
 ---
 
