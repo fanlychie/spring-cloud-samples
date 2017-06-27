@@ -3,7 +3,7 @@
 Spring Cloud Netflix Eureka 演示项目，项目结构：
 
 ```html
-spring-cloud-netflix-eureka-sample（父项目）
+spring-cloud-netflix-eureka-sample（父模块）
 |
 |
 |__ eureka-server（Eureka 服务器端应用）

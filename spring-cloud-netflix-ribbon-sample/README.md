@@ -3,7 +3,7 @@
 Spring Cloud Netflix Ribbon 演示项目，项目结构：
 
 ```html
-spring-cloud-netflix-ribbon-sample（父项目）
+spring-cloud-netflix-ribbon-sample（父模块）
 |
 |
 |__ base-module（基础模块）
