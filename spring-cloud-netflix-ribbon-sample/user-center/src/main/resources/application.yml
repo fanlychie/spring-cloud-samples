@@ -7,5 +7,5 @@ order-service:
   ribbon:
     eureka:
       enabled: false
-    listOfServers: peer1:8881,peer2:8882
+    listOfServers: localhost:8881,localhost:8882
     ServerListRefreshInterval: 15000
