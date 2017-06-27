@@ -1,6 +1,6 @@
 # 简述
 
-Spring Cloud Netflix Eureka 示例项目，项目结构：
+Spring Cloud Netflix Eureka 演示项目，项目结构：
 
 ```html
 spring-cloud-netflix-eureka-sample（父项目）
@@ -20,6 +20,6 @@ spring-cloud-netflix-eureka-sample（父项目）
 127.0.0.1 peer1 peer2 peer3
 ```
 
-# 快速启动示例项目
+# 快速启动演示项目
 
 双击执行 `quick-start.bat` 批处理文件。
