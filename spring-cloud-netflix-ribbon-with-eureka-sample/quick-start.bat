@@ -39,24 +39,12 @@
 	echo [INFO]
 	echo [INFO] ------------------------------------------------------------------------
 	echo [INFO]
-	echo [INFO] 正在启动 Eureka 服务器 Peer1 . . .
+	echo [INFO] 正在启动 Eureka 服务器 . . .
 	echo [INFO]
 	echo [INFO] ------------------------------------------------------------------------
 	echo [INFO]
 	
-	start "Eureka Peer1" /min cmd /T:3E /k "java -jar eureka-server-0.0.1-SNAPSHOT.jar"
-	
-	ping -n 5 127.1 > nul
-	
-	echo [INFO]
-	echo [INFO] ------------------------------------------------------------------------
-	echo [INFO]
-	echo [INFO] 正在启动 Eureka 服务器 Peer2 . . .
-	echo [INFO]
-	echo [INFO] ------------------------------------------------------------------------
-	echo [INFO]
-	
-	start "Eureka Peer2" /min cmd /T:3E /k "java -jar -Dspring.profiles.active=peer2 eureka-server-0.0.1-SNAPSHOT.jar"
+	start "Eureka Server" /min cmd /T:3E /k "java -jar eureka-server-0.0.1-SNAPSHOT.jar"
 	
 	ping -n 5 127.1 > nul
 	
@@ -132,6 +120,8 @@
 	echo [INFO] ------------------------------------------------------------------------
 	echo [INFO]
 	echo [INFO] 构建完毕！
+	echo [INFO]
+	echo [INFO] http://localhost:8761
 	echo [INFO]
 	echo [INFO] http://localhost:8888/user/orders/1001
 	echo [INFO]
