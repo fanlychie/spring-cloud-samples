@@ -7,5 +7,7 @@ order-service:
   ribbon:
     eureka:
       enabled: false
+    # 微服务的服务器列表
     listOfServers: localhost:8881,localhost:8882
+    # 刷新微服务的服务器列表信息间隔的毫秒数
     ServerListRefreshInterval: 15000

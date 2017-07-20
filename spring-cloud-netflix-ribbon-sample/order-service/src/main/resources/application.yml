@@ -2,18 +2,14 @@ spring:
   application:
     name: order-service
   profiles:
-    active: client1
-
+    active: service1
 ---
-
 spring:
-  profiles: client1
+  profiles: service1
 server:
   port: 8881
-
 ---
-
 spring:
-  profiles: client2
+  profiles: service2
 server:
   port: 8882
