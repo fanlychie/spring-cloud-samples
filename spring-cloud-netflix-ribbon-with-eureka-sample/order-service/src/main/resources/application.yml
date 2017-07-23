@@ -2,22 +2,18 @@ spring:
   application:
     name: order-service
   profiles:
-    active: client1
+    active: service1
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
-
 ---
-
 spring:
-  profiles: client1
+  profiles: service1
 server:
   port: 8881
-
 ---
-
 spring:
-  profiles: client2
+  profiles: service2
 server:
   port: 8882

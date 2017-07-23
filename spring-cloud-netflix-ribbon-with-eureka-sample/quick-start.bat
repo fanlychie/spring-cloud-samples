@@ -67,24 +67,24 @@
 	echo [INFO]
 	echo [INFO] ------------------------------------------------------------------------
 	echo [INFO]
-	echo [INFO] 正在启动服务提供者应用 Client1 . . .
+	echo [INFO] 正在启动服务提供者应用 Service1 . . .
 	echo [INFO]
 	echo [INFO] ------------------------------------------------------------------------
 	echo [INFO]
 	
-	start "Provider Client1" /min cmd /T:3E /k "java -jar order-service-0.0.1-SNAPSHOT.jar"
+	start "Provider Service1" /min cmd /T:3E /k "java -jar order-service-0.0.1-SNAPSHOT.jar"
 	
 	ping -n 5 127.1 > nul
 	
 	echo [INFO]
 	echo [INFO] ------------------------------------------------------------------------
 	echo [INFO]
-	echo [INFO] 正在启动服务提供者应用 Client2 . . .
+	echo [INFO] 正在启动服务提供者应用 Service2 . . .
 	echo [INFO]
 	echo [INFO] ------------------------------------------------------------------------
 	echo [INFO]
 	
-	start "Provider Client2" /min cmd /T:3E /k "java -Dspring.profiles.active=client2 -jar order-service-0.0.1-SNAPSHOT.jar"
+	start "Provider Service2" /min cmd /T:3E /k "java -Dspring.profiles.active=service2 -jar order-service-0.0.1-SNAPSHOT.jar"
 	
 	ping -n 5 127.1 > nul
 	
